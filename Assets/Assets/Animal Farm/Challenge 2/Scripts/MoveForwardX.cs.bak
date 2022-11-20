@@ -1,0 +1,19 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MoveForwardX : MonoBehaviour
+{
+    public float speed;
+	private static bool canReload;
+
+    // Update is called once per frame
+    void Update()
+    {
+		if(!reload)
+		{
+			reload = true;
+		}
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+    }
+}
